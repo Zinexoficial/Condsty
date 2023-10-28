@@ -1,0 +1,47 @@
+#!/usr/bin/python3
+import os
+import sys
+import time
+import socket
+import smtplib
+import getpass
+print("Olá, Querido Usuário Utilize Este Script Para O Bem")
+time.sleep(4)
+os.system("clear")
+print("█▀▀ █▀█ █▄░█ █▀▄ █▀ ▀█▀ █▄█")
+print("█▄▄ █▄█ █░▀█ █▄▀ ▄█ ░█░ ░█░")
+print("CARREGANDO COMANDOS")
+time.sleep(2)
+print("CARREGANDO USUÁRIO")
+time.sleep(5)
+print("CARREGANDO API'S")
+time.sleep(5)
+os.system("clear")
+print("█▀▀ █▀█ █▄░█ █▀▄ █▀ ▀█▀ █▄█")
+print("█▄▄ █▄█ █░▀█ █▄▀ ▄█ ░█░ ░█░")
+print("1: Atualizar Termux")
+print("2: Zphisher")
+print("3: Nmap")
+print("4: Hackear Instagram")
+
+escolha = False
+
+while escolha == False:
+    nivel = int(input("escolha uma opção: "))
+    if (nivel == 1):
+      os.system("pkg update && pkg upgrade")
+    
+    elif (nivel== 2):
+        os.system("git clone https://github.com/htr-tech/zphisher")  
+    
+    elif (nivel == 3):
+        os.system("pkg install nmap")
+    elif (nivel == 4):
+        login = input("Digite o seu login: ")
+
+senha = getpass.getpass("Digite a sua senha: ")
+
+if login == "admin" and senha == "123456":
+    print("Login efetuado com sucesso!")
+else:
+    print("Login ou senha incorretos!")     
